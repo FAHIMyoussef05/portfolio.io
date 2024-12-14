@@ -574,12 +574,36 @@ span{
     align-items: center;
     flex-direction: column;
   }
-  @media (max-width: 400px) { 
-    .services-content { 
-      margin: 5px;
-      padding: 5px;
-    }
+   @media (max-width: 768px) {
+  .services {
+    height: auto;
+    padding: 20px;
   }
+  .services .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .services .container h2 {
+    font-size: 2rem;
+  }
+  .services-content {
+    flex-direction: column;
+  }
+  .service {
+    margin: 20px;
+    width: 100%;
+  }
+  .service i {
+    font-size: 30px;
+  }
+  .service h3 {
+    font-size: 1.5rem;
+  }
+  .service p {
+    font-size: 1rem;
+  }
+}
   
   .services .container {
     max-width: 1200px;
